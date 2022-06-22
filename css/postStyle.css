@@ -1,0 +1,25 @@
+.postHeader .container {
+  display: flex;
+  height: 100%;
+}
+.postHeader .lead {
+  font-size: 45px;
+  align-self: flex-end;
+  overflow: hidden;
+}
+.postText {
+  padding: 30px;
+}
+.postText .grid {
+  grid-template-columns: 3fr 1fr;
+}
+.categories-menu {
+  display: flex;
+  align-self: flex-start;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.categories-menu li {
+  padding-top: 0.5rem;
+  border-bottom: 1px solid gray;
+}

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&amp;display=swap");
+
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #101c9e;
+  --dark-color: #4cbfa6;
+  --light-color: #cacacd;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+.navbar {
+  background-color: var(--primary-color);
+  height: 100px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: black;
+  padding: 10px;
+  margin: 0px 5px;
+  text-align: center;
+}
+.navbar a:hover {
+  border-bottom: white 2px solid;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: black;
+  position: relative;
+}
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  margin: 20px 0;
+}
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+.showcase-text {
+}
+.showcase-latest {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+.showcase-latest .card {
+  margin: 30px 0;
+}
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 120px;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-2deg);
+}
+/* Categories */
+.cat {
+  padding-top: 100px;
+}
+.cat-heading {
+  max-width: 500px;
+  margin: auto;
+}
+.cat .grid h3 {
+  font-size: 16px;
+}
+.cat .grid p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Tree picture */
+.treePicture .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.treePicture .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+/* Hosting */
+.hosting .grid {
+  grid-template-columns: 4fr 3fr;
+}
+/* Languages */
+.languages img {
+  width: 55px;
+  align-items: center;
+}
+.languages .card {
+  text-align: center;
+  margin: 15px 10px 40px;
+  transition: transform 0.2s ease-in;
+  width: 150px;
+}
+.languages .flex {
+  flex-wrap: wrap;
+}
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+/* Poetry */
+.poetry-sub-head {
+  box-shadow: inset 0 10px 10px -10px black, inset 0 -10px 10px -10px black;
+}
+.lead {
+  padding: 2rem;
+}
+.poetry-sub-head img {
+  width: 250px;
+  justify-self: flex-end;
+}
+.poetry-main {
+  padding: 0px 10px;
+}
+.poetry-main .grid .card {
+  gap: 0px;
+  margin: 0;
+}
+
+.poetry-sub-head .grid {
+  overflow: hidden;
+}
+.poetry-main .author {
+  color: white;
+}
+.poetry-head .grid .card {
+  margin: auto;
+}
+
+.poemName a {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.card .flex .card {
+  width: 100%;
+  height: 230px;
+}
+/* Footer */
+.footer .social a {
+  margin: 0 0px;
+}
+
+/* Tablet and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .cat .grid,
+  .treePicture .grid,
+  .hosting .grid,
+  .footer .grid,
+  .poetry-head .grid,
+  .poetry-main .grid,
+  .poetry-sub-head .grid,
+  .categories .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .poem .flex {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .showcase-latest {
+    justify-self: center;
+    margin: auto;
+  }
+  .treePicture .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .cat h3 {
+    width: 300px;
+    margin: auto;
+  }
+  .navbar .flex {
+    flex-direction: row;
+    overflow: hidden;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    height: max-content;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .navbar li {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  .showcase-latest {
+    width: 300px;
+  }
+}

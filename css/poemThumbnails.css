@@ -1,0 +1,23 @@
+.poemthumbnail {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.poemCounting {
+  background-image: url(../poems/poemCounting/counting.png);
+}
+.poemDestroyed {
+  background-image: url(../poems/poemDestroyed/destroyed.png);
+}
+.poemStalking {
+  background-image: url(../poems/poemStalking/stalking.png);
+}
+.poemEverything {
+  background-image: url(../poems/poemEverything/everything.png);
+}
+.poemDreamvsWar {
+  background-image: url(../poems/poemDreamvsWar/dreamwar.png);
+}
+.poemBridges {
+  background-image: url(../poems/poemBridges/bridges.png);
+}

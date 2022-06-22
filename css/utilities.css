@@ -1,0 +1,177 @@
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0px 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.border {
+  border: 2px solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+.card p {
+  height: 300px;
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn_latest {
+  position: absolute;
+  bottom: 10px;
+}
+.btn-outline {
+  /* background-color: transparent; */
+  border: 1px solid #fff;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+/* Background and colored btns */
+.background-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.background-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.background-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.background-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: black;
+}
+.background-primary a,
+.btn-primary a,
+.background-secondary a,
+.btn-secondary a,
+.background-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+/* text sizes */
+.lead {
+  font-size: 20px;
+}
+.sm {
+  font-size: 1rem;
+}
+.md {
+  font-size: 2rem;
+}
+.xl {
+  font-size: 4rem;
+}
+
+/* Margin */
+.marginY-1 {
+  margin: 1rem 0;
+}
+.marginY-2 {
+  margin: 1.5rem 0;
+}
+.marginY-3 {
+  margin: 2rem 0;
+}
+.marginY-4 {
+  margin: 2rem 0;
+}
+.marginY-5 {
+  margin: 4rem 0;
+}
+
+.margin-1 {
+  margin: 1rem;
+}
+.margin-2 {
+  margin: 1.5rem;
+}
+.margin-3 {
+  margin: 2rem;
+}
+.margin-4 {
+  margin: 2rem;
+}
+.margin-5 {
+  margin: 4rem;
+}
+/* Padding */
+.padding-1 {
+  padding: 1rem;
+}
+.padding-2 {
+  padding: 1.5rem;
+}
+.padding-3 {
+  padding: 2rem;
+}
+.padding-4 {
+  padding: 2rem;
+}
+.padding-5 {
+  padding: 4rem;
+}
+
+.paddingY-1 {
+  padding: 1rem 0;
+}
+.paddingY-2 {
+  padding: 1.5rem 0;
+}
+.paddingY-3 {
+  padding: 2rem 0;
+}
+.paddingY-4 {
+  padding: 2rem 0;
+}
+.paddingY-5 {
+  padding: 4rem 0;
+}

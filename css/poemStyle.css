@@ -1,0 +1,36 @@
+.poem .card {
+  width: 100%;
+}
+.poem img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+}
+.poem .flex {
+  gap: 45px;
+}
+.poemText p {
+  height: 0;
+}
+.poem .grid .card {
+  gap: 0px;
+  margin: 0;
+}
+.poemText ul,
+.poemText li {
+  padding: 10px;
+  list-style-type: none;
+  line-height: 1.2;
+  padding: 3px;
+}
+.poemTitle {
+  padding: 1rem;
+  text-align: center;
+  height: 100%;
+}
+.poemText {
+  font-size: 0.9rem;
+  width: 400px;
+  text-align: left;
+  margin: auto;
+}
