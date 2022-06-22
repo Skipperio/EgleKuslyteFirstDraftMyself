@@ -21,3 +21,7 @@
 .poemBridges {
   background-image: url(../poems/poemBridges/bridges.png);
 }
+.poemName a {
+  color: white;
+  text-shadow: 4px 2px 4px black;
+}
