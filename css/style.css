@@ -188,6 +188,12 @@ img {
   width: 100%;
   height: 230px;
 }
+
+/* icons */
+.iconCategories img {
+  width: 70px;
+}
+
 /* Footer */
 .footer .social a {
   margin: 0 0px;
