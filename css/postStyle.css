@@ -23,3 +23,23 @@
   padding-top: 0.5rem;
   border-bottom: 1px solid gray;
 }
+.text {
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  gap: 3px;
+}
+.gallery img {
+  width: 100%;
+}
+.church {
+  width: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.beach {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.liverpoolpics {
+}
