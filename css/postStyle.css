@@ -31,15 +31,48 @@
   gap: 3px;
 }
 .gallery img {
-  width: 100%;
+  border-radius: 5px;
 }
-.church {
-  width: 100%;
-  grid-template-columns: 1fr 2fr 1fr;
+.nearSea img {
+  border-radius: 5px;
 }
+.beatles img {
+  border-radius: 5px;
+}
+#church {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+#church img {
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
 .beach {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
-.liverpoolpics {
+.beach img {
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+}
+#liverpoolpics {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+#liverpoolpics img {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.g {
+  grid-column: 1 / 3;
 }
