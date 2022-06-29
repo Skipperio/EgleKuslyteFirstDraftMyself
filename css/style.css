@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Moon+Dance&amp;display=swap");
 
 :root {
-  --primary-color: #1976d2;
-  --secondary-color: #101c9e;
-  --dark-color: #4cbfa6;
-  --light-color: #cacacd;
+  --primary-color: #3059ea;
+  --secondary-color: #1f46cc;
+  --dark-color: #1937a1;
+  --light-color: #c0c0c0;
 }
 * {
   box-sizing: border-box;
