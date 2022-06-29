@@ -24,3 +24,9 @@
   display: flex;
   justify-content: center;
 }
+.container p {
+  text-align: center;
+}
+.container iframe {
+  padding: 0 3rem;
+}
